@@ -13,11 +13,14 @@ public class App
     {
     	Usuario usuario = new Usuario();
     	
-    	usuario.setEmail("drleo111@gmail.com");
-    	usuario.setNome("Leonardo Ramos");
+    	usuario.setId(2);
+    	usuario.setEmail("janaina@gmail.com");
+    	usuario.setNome("Janaina Ramos");
     	
     	UsuarioDAO usuarioDAO = new UsuarioDAO();
     	
-    	usuarioDAO.insert(usuario);
+    	usuario.setEmail("janaina1234@gmail.com");
+    	
+    	usuarioDAO.update(usuario);
     }
 }
